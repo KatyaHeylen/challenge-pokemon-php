@@ -1,0 +1,123 @@
+// @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+
+/*html {*/
+/*    width: 100vh;*/
+/*    height: 100%;*/
+/*    Font-family: 'Inconsolata', monospace;*/
+/*    position: absolute;*/
+/*    background-color: cyan;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    background-image: url("images/pokedex.png");*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: left;*/
+/*    background-size: cover;*/
+
+/*}*/
+
+/*.field {*/
+/*    position: absolute;*/
+/*    margin-top: 20px;*/
+/*    margin-left: 650px;*/
+/*    font-size: 1rem;*/
+/*    text-align: center;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    flex-wrap: nowrap;*/
+/*    justify-content: center;*/
+/*    align-items: stretch;*/
+/*    align-content: center;*/
+/*}*/
+/*#poke-id {*/
+/*    padding: 10px;*/
+/*    border-style: solid;*/
+/*    border-color: darkblue;*/
+/*    border-width: 3px;*/
+/*    border-radius: 10px;*/
+/*    height: 35px;*/
+
+/*}*/
+/*#creature {*/
+/*    position: relative;*/
+/*    height: 150px;*/
+/*    margin-top: 203px;*/
+/*    margin-left: 160px;*/
+/*}*/
+
+/*h1 {*/
+/*    position: absolute;*/
+/*    margin-left: 160px;*/
+/*    margin-top: 150px;*/
+/*}*/
+/*h2 {*/
+/*    position: absolute;*/
+/*    width: fit-content;*/
+/*    color: gainsboro;*/
+/*    margin-top: -130px;*/
+/*    margin-left: 580px;*/
+/*}*/
+/*h3{*/
+/*    position: absolute;*/
+/*    width: 150px;*/
+/*    margin-left: 670px;*/
+/*    margin-top: 150px;*/
+/*    color: gainsboro;*/
+/*    font-size: 17px;*/
+/*}*/
+/*.moves {*/
+/*    width: 400px;*/
+/*    z-index: 2;*/
+/*    padding-right: 0;*/
+/*}*/
+/*span {*/
+/*    width: fit-content;*/
+/*}*/
+/*.move1 {*/
+/*    position: absolute;*/
+/*    width: 150px;*/
+/*    margin-left: 540px;*/
+/*    margin-top: -35px;*/
+/*    font-size: 12px;*/
+/*}*/
+/*.move2 {*/
+/*    position: absolute;*/
+/*    width: 150px;*/
+/*    margin-left: 670px;*/
+/*    margin-top: -35px;*/
+/*    font-size: 12px;*/
+/*}*/
+/*.move3 {*/
+/*    position: absolute;*/
+/*    width: 150px;*/
+/*    margin-left: 540px;*/
+/*    margin-top: 5px;*/
+/*    font-size: 12px;*/
+/*}*/
+/*.move4 {*/
+/*    position: absolute;*/
+/*    width: 150px;*/
+/*    margin-left: 670px;*/
+/*    margin-top: 5px;*/
+/*    font-size: 12px;*/
+/*}*/
+/*#evolpic {*/
+/*    position: absolute;*/
+/*    margin-left: 540px;*/
+/*    margin-top: 95px;*/
+/*    font-size: 0.8rem;*/
+/*}*/
+/*.reset {*/
+/*    display: none;*/
+/*    margin-left: 740px;*/
+/*    margin-top: 70px;*/
+/*    background-image: radial-gradient(orange 20%, yellow);*/
+/*    border-radius: 50%;*/
+/*    width: 50px;*/
+/*    height: 50px;*/
+/*    font-size: 10px;*/
+/*    border-style: solid;*/
+/*    border-width: 3px;*/
+/*    box-shadow: 2px 2px 5px gray;*/
+/*    font-family: inherit;*/
+/*    cursor: pointer;*/
+/*}*/
