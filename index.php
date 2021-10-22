@@ -16,6 +16,16 @@
     $id_pokemon = trim($_POST["poke-id"]);
     $response_data = file_get_contents($url_pokemon . $id_pokemon . "/");
     $one_pokemon_data_array = json_decode($response_data, true);
+    $url_species = "https://pokeapi.co/api/v2/pokemon-species/";
+    $evolution_data = file_get_contents($url_species . $id_pokemon . "/");
+    $species_array = json_decode($evolution_data, true);
+    $link = $species_array["evolution_chain"];
+   // $evolution_info = file_get_contents($link["url"]);
+    echo ($link["url"]);
+   // $evolution_array = json_decode($evolution_info, true);
+    // $evolution_name = file_get_contents($url_pokemon . getEvolName($evolution_info));
+//  $evolution_one_pokemon = json_decode($evolution_name);
+//    var_dump($evolution_one_pokemon);
 
 
     function ImgSrc ($image) {
@@ -41,37 +51,22 @@
         }
         return $moveNames;
     }
-
-    function getEvolutionLink ($array) {
-
-        $url_species = "https://pokeapi.co/api/v2/pokemon-species/";
-        $id_pokemon = trim($_POST["poke-id"]);
-        $response_data = file_get_contents($url_species . $id_pokemon . "/");
-        $species_array = json_decode($response_data, true);
-        $link = $species_array["evolution_chain"];
-        foreach ($link as $value) {
-        $evolution_data = file_get_contents($value);
-        $evol_array = json_decode($evolution_data);
-        return $evol_array;
-        }
+    function getEvolName ($data) {
+        return ($data)["chain"]["species"]["name"];
     }
-    getEvolutionLink($array);
-
-
-
     ?>
     <form action="" method="post" class="search">
         <label for="poke-id">Type ID or name of pokemon</label>
-        <input type="text" name="poke-id" value=" "/>
+        <input type="text" name="poke-id" id="poke-id" value=" "/>
         <br/>
         <input type="submit" name="submit" value="Search"/>
     </form>
     <br/>
     <section class="output">
         <div class="datas">
-            <img src="<?php echo ImgSrc($one_pokemon_data_array)?>">
+            <img src="<?php echo ImgSrc($one_pokemon_data_array)?>" alt=" " width="100px">
             <h1><?php echo GetID($one_pokemon_data_array)?></h1>
-            <h2><?php echo GetName($one_pokemon_data_array)?></h2>
+            <h2 id="name"><?php echo GetName($one_pokemon_data_array)?></h2>
             <p>Moves:
                 <?php
                    foreach ((GetMoves($one_pokemon_data_array)) as $value) {
@@ -81,10 +76,9 @@
             </p>
             </div>
             <div class="evolution">
-                <img src="images/star.png" width="90px" id="evolpic" alt=" " title="pokemon"/>
-                <h3>Name</h3>
+                <img src="<?php /* echo imgSrc($evolution_one_pokemon)*/?>" alt="pokemon"/>
+                <h3><?php /*echo getEvolName($evolution_array)*/?></h3>
             </div>
-        </div>
     </section>
     <button type="button" class="reset">RESET</button>
 
